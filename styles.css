@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Work+Sans&display=swap');
+*{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Work Sans', sans-serif; 
+}
+body {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Work Sans', sans-serif;    
+    height: 100vh;
+    background-color: #d0d1ff;
+    overflow: hidden;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -270px;
+    background-color:rgba(255, 255, 255, 0.5)
+}
+h1{
+    position: relative;
+    right: auto;
+    text-align: center;
+    bottom: 100px;
+    padding-top: 10px;
+    height: 50px;
+    color: white;
+    background-color: #c77dff;
+}
+.title{
+    display: inline;
+    position:relative;
+    margin-top:-17px;
+    height:5px;
+    z-index:-1;
+
+}
+
+#todo__input{
+    text-align:center;
+    width: 500px;
+    height: 30px;
+    opacity: 0.7;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+
+}
+#theList{
+    list-style-type: circle;
+    font-weight: bold;
+    padding-top: 20px;
+    position: relative; 
+    margin: auto;
+    width: 400px;
+    word-wrap: break-word;
+    padding-bottom: 40px;
+}
+#addButton{
+    background-color: #c77dff;
+    border-radius: 300px;
+    border: none;
+    width: 140px;
+    cursor: pointer;
+    position: relative;
+    left: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+.delateButton {
+    background: url('/img/delete.svg') no-repeat top left;
+    height: 20px;
+    width: 20px;
+    margin-left: 35px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+    text-align: center;
+}
+.doneButton{
+    background: url('/img/done.svg') no-repeat top left;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+.inProgressButton{
+    background: url('/img/inprogress.svg') no-repeat top left;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
